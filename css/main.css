@@ -12,10 +12,17 @@ body {
 	color: #ffffff;
 	background-color: #000000; 
 }
+a {
+	color: #cccccc;
+}
+.clear {
+	clear: both;
+}
 #wrapper {
 	margin: 0 auto;
 	border: 1px solid #ffffff;
 	width: 876px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Lucida, Arial, Helvetica, sans-serif;
 }
 #header {
 	height: 45px;
@@ -24,6 +31,9 @@ body {
 #logo {
 	height: 45px;
 	width: 250px;
+}
+#logo a {
+	text-decoration: none;
 }
 #imagebar {
 	height: 280px;
@@ -40,8 +50,11 @@ body {
 	margin: 20px;
 	padding-bottom: 5px;
 	border-bottom: 1px dotted #bbbbbb;
+    color: #ffd944;
+	text-transform: uppercase;
+	font-weight: lighter;
 }
-#releaseList {
+.releases {
 	padding: 0px 15px 25px 15px;
 }
 .release {
@@ -50,46 +63,6 @@ body {
 	height: 40px;
 	padding: 10px;
 	margin: 5px;
-}
-.release li {
-	display: inline;
-}
-.playing {
-	border: 1px solid #84abff;
-	margin: 4px;
-}
-#releaseLicense {
-	clear: both;
-	margin: 10px 20px 15px 20px;
-}
-#footer {
-	clear: both;
-	border-top: 1px solid #ffffff;
-	padding: 5px 20px 5px 20px;
-}
-#site_meta {
-	float: left;
-	text-align: left;
-}
-#site_copyright {
-	text-align: right;
-}
-.clear {
-	clear: both;
-}
-a {
-	color: #cccccc;
-}
-#wrapper {
-	font-family: "Lucida Grande", "Lucida Sans Unicode", Lucida, Arial, Helvetica, sans-serif;
-}
-#logo a {
-	text-decoration: none;
-}
-#content h2 {
-	color: #ffd944;
-	text-transform: uppercase;
-	font-weight: lighter;
 }
 .release {
 	background-color: #222222;
@@ -109,19 +82,32 @@ a {
 	font-size: 95%;	
 	text-transform: lowercase;
 }
+.release li {
+	display: inline;
+}
 .playing {
-	background-color: #333333;
+	border: 1px solid #84abff;
+	margin: 4px;
+    background-color: #333333;
 }
-#releaseLicense {
-	font-size: 80%;
+#license-info {
+	clear: both;
+	margin: 10px 20px 15px 20px;
+    font-size: 80%;
 }
-#releaseLicense a {
+#license-info a {
 	text-decoration: none;
 }
 #footer {
-	text-align: center;
+	clear: both;
+	border-top: 1px solid #ffffff;
+	padding: 5px 20px 5px 20px;
+    text-align: center;
 	font-size: 75%;
 }
 #footer a {
 	color: #cccccc;
+}
+#copyright {
+	text-align: right;
 }
